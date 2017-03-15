@@ -1364,7 +1364,7 @@
 /* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var WeatherMessage = React.createClass({\n//   render: function() {\n//     var {temp, location} = this.props;\n//     return(\n//       <h3>It's {temp} in {location}!</h3>\n//     );\n//   }\n// });\n\nvar WeatherMessage = function WeatherMessage(props) {\n  var temp = props.temp,\n      location = props.location;\n\n  return React.createElement(\n    'h3',\n    null,\n    'It\\'s ',\n    temp,\n    ' in ',\n    location,\n    '!'\n  );\n};\n\nmodule.exports = WeatherMessage;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/WeatherMessage.jsx\n ** module id = 220\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/WeatherMessage.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var WeatherMessage = React.createClass({\n//   render: function() {\n//     var {temp, location} = this.props;\n//     return(\n//       <h3>It's {temp} in {location}!</h3>\n//     );\n//   }\n// });\n\nvar WeatherMessage = function WeatherMessage(props) {\n  var temp = props.temp,\n      location = props.location;\n\n  return React.createElement(\n    'h3',\n    null,\n    'It\\'s ',\n    temp,\n    ' in ',\n    location,\n    '!'\n  );\n};\n\n//Another way using ES6 destructuring\n// var WeatherMessage = ({temp, location}) => {\n//   return(\n//     <h3>It's {temp} in {location}!</h3>\n//   )\n// };\n\nmodule.exports = WeatherMessage;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/WeatherMessage.jsx\n ** module id = 220\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/WeatherMessage.jsx?");
 
 /***/ },
 /* 221 */
@@ -1532,7 +1532,7 @@
 /* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var Examples = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>Examples Component</h3>\n//     )\n//   }\n// });\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'h3',\n    null,\n    'Examples Component'\n  );\n};\n\nmodule.exports = Examples;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/Examples.jsx\n ** module id = 248\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\n// var Examples = React.createClass({\n//   render: function() {\n//     return (\n//       <h3>Examples Component</h3>\n//     )\n//   }\n// });\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'div',\n    null,\n    React.createElement(\n      'h3',\n      null,\n      'Examples Component!'\n    ),\n    React.createElement(\n      'p',\n      null,\n      'Welcome to examples page!'\n    )\n  );\n};\n\nmodule.exports = Examples;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/Examples.jsx\n ** module id = 248\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
 
 /***/ }
 /******/ ]);
